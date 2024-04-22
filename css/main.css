@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import url(all.min.css);
+@import url(reset.css);
+@import url(font.css);
+@import url(header_footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* 공통 */
+    body {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    div.contents {
+        margin-bottom: 200px;
+        position: relative;
+        margin-top: 60px;
+    }
+
+/* 메인 배너 영역 - 네모 세개 */
+    #main_banner {
+        width: 100%;
+    }
+    #main_banner > div {
+        padding: 0 50px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    #main_banner div.banner01 {
+        position: relative;
+        z-index: 10;
+        padding: 50px 60px;
+        width: 100%;
+        height: 400px;
+        background-color: #e7e7e7;
+        margin-bottom: 20px;
+    }
+    #main_banner div.banner_bottom {
+        width: calc(100%/2 - 20px);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border: 1px solid rgb(149, 157, 165,);
+        height: 250px;
+    }
+    #main_banner div.banner02 {
+        float: left;
+    }
+    #main_banner div.banner03 {
+        float: right;
+    }
+
+/* 메인 배너 - 텍스트 */
+    #main_banner div.banner01 div.text_area {
+        width: 55%;
+    }
+    #main_banner div.banner_bottom div.text_area {
+        width: 60%;
+        position: absolute;
+        top: 50%; transform: translateY(-50%);
+    }
+    #main_banner div.banner01 h3 {
+        font-size: 36px;
+        font-weight: 600;
+        color: black;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+    #main_banner div.banner01 p.short {
+        font-size: 16px;
+        margin-bottom: 50px;
+        line-height: 1.5;
+    }
+    #main_banner div.banner01 p.moveto {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 3px;
+        color: black;
+        border-bottom: 1px solid black;
+        position: relative;
+    }
+    #main_banner div.banner_bottom h3 {
+        font-size: 28px;
+        margin-bottom: 18px;
+        color: black;
+    }
+    #main_banner div.banner_bottom p.short {
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+    #main_banner div.banner_bottom time {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    #main_banner div.banner_bottom p.moveto {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+        padding-bottom: 3px;
+        border-bottom: 1px solid black;
+        position: relative;
+    }
+    #main_banner p.moveto:after {
+        content: '\f054';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        width: 25px; height: 25px;
+        position: absolute;
+        right: -30px; top: 3px;
+    }

@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import url(all.min.css);
+@import url(reset.css);
+@import url(font.css);
+@import url(header_footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* 공통 */
+    body {
+        width: 1140px;
+        margin: 0 auto !important;
+    }
+    #wrap {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+/* main */
+    div.contents {
+        margin-bottom: 300px;
+    }
+/* main - DID란? - dep02 */
+    main h2 {
+        color: black;
+        margin-bottom: 60px;
+    }
+    ul.dep02 {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    ul.dep02 > li {
+        line-height: 1.5;
+    }
+    ul.dep02 > li > a {
+        font-size: 18px;
+        color: black;
+        font-weight: 500;
+    }
+    ul.dep02 > li {
+        display: flex;
+        justify-content: space-between;
+    }
+
+/* main - DID란? - dep03 */
+    ul.dep03 {
+        margin-top: -5px;
+        margin-left: 20px;
+    }
+    ul.dep03 > li {
+        line-height: 2.5;
+    }
+
+    
+/* top bottom */
+    ul.top {
+        margin-bottom: 60px;
+    }
